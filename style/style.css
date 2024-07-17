@@ -191,10 +191,17 @@ header {
     .header-text-content h2{
         font-size: 2.2rem;
     }
+    .haeder-btn{
+        display: flex;
+        justify-content: space-around;
+    }
     .download-app-btn{
         margin: 0;
     }
     .header-image-content{
+        margin-left: .5rem;
+    }
+    .video-tutorial{
         margin-left: 2rem;
     }
 }
