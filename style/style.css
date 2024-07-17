@@ -201,7 +201,10 @@ header {
         margin: 0;
     }
     .header-image-content{
-        margin-left: .5rem;
+        margin-left: 2rem;
+    }
+    .header-image-content img{
+        width: 350px;
     }
     .video-tutorial{
         margin-left: 2rem;
