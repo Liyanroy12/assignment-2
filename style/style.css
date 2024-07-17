@@ -197,6 +197,9 @@ header {
         display: flex;
         justify-content: space-around;
     }
+    .word-out-video{
+        margin-right: 10%;
+    }
     .download-app-btn{
         margin: 0;
     }
