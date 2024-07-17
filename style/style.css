@@ -240,7 +240,7 @@ header {
         justify-content: space-around;
     }
     .word-out-video{
-        margin-right: 20%;
+        margin-left: 20%;
     }
     .download-app-btn{
         margin: 0;
@@ -252,7 +252,7 @@ header {
         width: 200%;
     }
     .video-tutorial{
-        margin-left: 2rem;
+        margin-left: 1%;
     }
     .habbit-section{
         margin-top: 80%;
