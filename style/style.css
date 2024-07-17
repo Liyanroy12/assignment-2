@@ -83,10 +83,11 @@ header {
     font-weight: 800;
     margin-bottom: 0;
 }
- .header-text-content span{
+
+.header-text-content span {
     font-family: "Miniver", cursive;
     font-style: italic;
- }
+}
 
 .header-text-content p {
     color: rgba(255, 255, 255, 0.5);
@@ -120,7 +121,8 @@ header {
     top: 25%;
     left: 70%;
 }
-.word-out-video h2{
+
+.word-out-video h2 {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     margin-top: 5px;
@@ -128,13 +130,15 @@ header {
     font-weight: 900;
     margin-left: 10%;
 }
-.word-out-video p{
+
+.word-out-video p {
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.8rem;
     font-weight: 400;
     margin-left: 10%;
 }
-.video-tutorial{
+
+.video-tutorial {
     height: 98px;
     width: 193px;
     backdrop-filter: blur(20px);
@@ -146,39 +150,44 @@ header {
     display: flex;
     justify-content: space-around;
 }
-.shap{
+
+.shap {
     height: 45px;
     width: 45px;
     background: rgb(230, 83, 60);
     border-radius: 100%;
     margin-top: 10%;
 }
-.text h1{
+
+.text h1 {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     margin-top: 5px;
     margin-bottom: 0;
     font-weight: 900;
 }
-.text p{
+
+.text p {
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.8rem;
     font-weight: 400;
 }
 
 /* Habbit section style */
-.habbit-section{
+.habbit-section {
     max-width: 80%;
     margin: 1rem auto;
 }
-.habbit-section h2{
+
+.habbit-section h2 {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     text-align: center;
     font-weight: 800;
     margin-bottom: 0;
 }
-.habbit-section p{
+
+.habbit-section p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     font-weight: 600;
@@ -186,26 +195,82 @@ header {
     margin-top: 1rem;
     line-height: 20px;
 }
-.card-items{
+
+.card-items {
     display: flex;
     justify-content: space-between;
 }
-.card-item{
+
+.card-item {
     margin-top: 2.5rem;
 }
-.card-item img{
+
+.card-item img {
     border-radius: 100%;
 }
-.card-item h3{
+
+.card-item h3 {
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
     font-weight: 600;
     text-align: center
 }
-.card-paragraph{
+
+.card-paragraph {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+/* Run section style is hear */
+.run-section {
+    max-width: 80%;
+    height: 371px;
+    margin: 1rem auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin-top: 3rem;
+}
+
+.run-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.run-text-content {
+    width: 40%;
+}
+
+.run-text-content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.run-text-content p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 1rem;
+}
+
+.run-image-content {
+    width: 40%;
+}
+
+.run-image-content img {
+    width: 100%;
+    border-radius: 16px;
+}
+.join-btn{
+    padding: .8rem 4rem;
+    border: none;
+    background: rgb(230, 83, 60);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
 }
 
 
@@ -224,52 +289,86 @@ header {
     ul>li>a {
         display: none;
     }
-    .header{
+
+    .header {
         width: 80%;
         margin: 0 auto;
         flex-direction: column;
     }
-    .header-text-content{
+
+    .header-text-content {
         max-width: 100%;
     }
-    .header-text-content h2{
+
+    .header-text-content h2 {
         font-size: 2.2rem;
     }
-    .haeder-btn{
+
+    .haeder-btn {
         display: flex;
         justify-content: space-around;
     }
-    .word-out-video{
+
+    .word-out-video {
         margin-left: 10%;
     }
-    .download-app-btn{
+
+    .download-app-btn {
         margin: 0;
     }
-    .header-image-content{
+
+    .header-image-content {
         margin-left: 2rem;
     }
-    .header-image-content img{
+
+    .header-image-content img {
         width: 200%;
     }
-    .video-tutorial{
+
+    .video-tutorial {
         margin-left: 1%;
     }
-    .habbit-section{
+
+    .habbit-section {
         margin-top: 80%;
     }
-    .habbit-section h2{
+
+    .habbit-section h2 {
         font-size: 2rem;
     }
-    .card-items{
+
+    .card-items {
         flex-direction: column;
         align-items: center;
     }
-    .card-item{
+
+    .card-item {
         width: 80%;
         margin: 2rem auto;
     }
-    .card-item img{
+
+    .card-item img {
         margin-left: 15%;
+    }
+    .run-section{
+        flex-direction: column;
+        margin-top: 10%;
+        height: 571px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .run-text-content{
+        width: 80%;
+    }
+    .run-text-content h1{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .run-image-content{
+        width: 80%;
+    }
+    .join-btn{
+        width: 100%;
     }
 }
 
@@ -279,10 +378,12 @@ header {
     .manu-bar {
         margin: 2rem auto;
     }
-    .header{
+
+    .header {
         flex-direction: column;
     }
-    .header-text-content{
+
+    .header-text-content {
         width: 100%;
         margin: 0 auto;
         border: 1px solid red;
