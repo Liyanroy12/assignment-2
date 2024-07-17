@@ -19,6 +19,8 @@ body {
 /* header section style */
 header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    max-width: 100%;
+    margin: 0 auto;
     height: 715px;
 }
 
@@ -197,8 +199,10 @@ header {
 }
 
 .card-items {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .card-item {
@@ -338,8 +342,9 @@ header {
     }
 
     .card-items {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column;
+        align-items: center; */
+        grid-template-columns: 1fr;
     }
 
     .card-item {
@@ -376,16 +381,48 @@ header {
 /* Responsive Tablate */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .manu-bar {
+        max-width: 90%;
         margin: 2rem auto;
+    }
+    header{
+        max-width: 100%;
+        margin-top: 0;
     }
 
     .header {
+        max-width: 90%;
+        margin: 1rem auto;
         flex-direction: column;
     }
 
     .header-text-content {
-        width: 100%;
+        max-width: 80%;
         margin: 0 auto;
-        border: 1px solid red;
+    }
+    .header-image-content{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .habbit-section{
+        margin-top: 90%;
+    }
+    .card-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .run-section{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .run-text-content{
+        max-width: 45%;
+    }
+    .run-text-content h1{
+        font-size: 2rem;
+    }
+    .run-image-content{
+        max-width: 45%;
+    }
+    .run-image-content img{
+        max-width: 100%;
     }
 }
