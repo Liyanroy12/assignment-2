@@ -183,6 +183,8 @@ header {
         display: none;
     }
     .header{
+        width: 80%;
+        margin: 0 auto;
         flex-direction: column;
     }
     .header-text-content{
