@@ -229,9 +229,8 @@ header {
 
 /* Run section style is hear */
 .run-section {
-    max-width: 80%;
+    max-width: 77%;
     padding: 2rem;
-    /* height: 371px; */
     margin: 1rem auto;
     border-radius: 18px;
     background: rgb(34, 34, 34);
@@ -263,11 +262,11 @@ header {
 }
 
 .run-image-content {
-    width: 40%;
+    max-width: 40%;
 }
 
 .run-image-content img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 16px;
 }
 .join-btn{
@@ -280,8 +279,125 @@ header {
     margin-top: 2rem;
 }
 
-
-
+/* traning and excercise style is hear */
+.traning-section{
+    max-width: 80%;
+    margin: 1rem auto;
+    margin-top: 5%;
+}
+.traning-section h2, p{
+    text-align: left;
+}
+.traning-section h2{
+    color: rgb(244, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.traning-section p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 2%;
+}
+.traning-items{
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr 1fr;
+}
+.traning-card2 img,
+.traning-card3 img{
+    width: 100%;
+    height: 200px;
+}
+.traning-card1{
+    background-image: linear-gradient(180.00deg, rgb(106, 216, 134), rgba(65, 139, 55, 0) 200%), url("../images/exercise1.jpg");
+    /* background-color: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%); */
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.traning-card2{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 119, 198, 0.185)), url("../images/exercise2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+}
+.traning-card3{
+    background-image: linear-gradient(rgba(32, 28, 28, 0.5), rgba(39, 36, 36, 0.5)), url("../images/exercise3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.traning-card2 p{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    top: 20%;
+    left: 10%;
+}
+.traning-card3 p{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.traning-card1 p{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: #000;
+    font-weight: 600;
+}
+.traning-items1{
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 0.75fr;
+}
+.traning-card4{
+    background-image: linear-gradient(rgba(32, 28, 28, 0.5), rgba(39, 36, 36, 0.5)), url("../images/exercise4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+.traning-card4 p{
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    color: rgb(255, 255, 255);
+}
+.traning-card5{
+    background-image: linear-gradient(rgba(104, 255, 99, 0.5), rgba(143, 250, 93, 0.5)), url("../images/exercise5.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.traning-card5 p,
+.traning-card6 p{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    color: rgb(255, 255, 255);
+}
+.traning-card6{
+    background-image: linear-gradient(rgba(64, 203, 245, 0.5), rgba(45, 210, 252, 0.5)), url("../images/exercise6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+.bolck-text{
+    display: none;
+}
 /* Responsive MObile */
 @media screen and (max-width: 576px) {
     #hamburger-manu {
@@ -345,8 +461,6 @@ header {
     }
 
     .card-items {
-        /* flex-direction: column;
-        align-items: center; */
         grid-template-columns: 1fr;
     }
 
@@ -366,18 +480,53 @@ header {
         margin: 0 auto;
     }
     .run-text-content{
-        width: 80%;
+        width: 100%;
     }
     .run-text-content h1{
         margin-top: 1rem;
         font-size: 2rem;
     }
     .run-image-content{
-        width: 80%;
+        max-width: 80%;
         margin-top: 10%;
+    }
+    .run-image-content img{
+        width: 100%;
     }
     .join-btn{
         width: 100%;
+    }
+    .traning-items{
+        grid-template-columns: 1fr 1fr;
+    }
+    .traning-items1{
+        grid-template-columns: .75fr 1.25fr;
+    }
+    .traning-card6{
+        display: none;
+    }
+    .traning-section{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .titel-pera{
+        display: none;
+    }
+    .bolck-text{
+        display: block;
+    }
+    .traning-card1,
+    .traning-card2,
+    .traning-card3,
+    .traning-card4,
+    .traning-card5,
+    .traning-card6{
+        position: relative;
+    }
+    .traning-card4 .bolck-text{
+        position: absolute;
+        left: 20%;
     }
 }
 
