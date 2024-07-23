@@ -41,7 +41,7 @@ header {
     display: flex;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.8rem;
+    padding: 0.8rem 0;
     border-radius: 50px;
 }
 
@@ -89,6 +89,7 @@ header {
 .header-text-content span {
     font-family: "Miniver", cursive;
     font-style: italic;
+    font-weight: 400;
 }
 
 .header-text-content p {
@@ -269,7 +270,8 @@ header {
     max-width: 100%;
     border-radius: 16px;
 }
-.join-btn{
+
+.join-btn {
     padding: .8rem 4rem;
     border: none;
     background: rgb(230, 83, 60);
@@ -280,46 +282,53 @@ header {
 }
 
 /* traning and excercise style is hear */
-.traning-section{
+.traning-section {
     max-width: 80%;
     margin: 1rem auto;
     margin-top: 5%;
 }
-.traning-section h2, p{
+
+.traning-section h2,
+p {
     text-align: left;
 }
-.traning-section h2{
+
+.traning-section h2 {
     color: rgb(244, 255, 255);
     font-size: 3rem;
     font-weight: 800;
     margin-top: 0;
     margin-bottom: 0;
 }
-.traning-section p{
+
+.traning-section p {
     color: rgb(255, 255, 255, 0.5);
     font-size: 0.8rem;
     font-weight: 400;
     margin-top: 2%;
 }
-.traning-items{
+
+.traning-items {
     display: grid;
     grid-template-columns: 0.75fr 1.25fr 1fr;
 }
+
 .traning-card2 img,
-.traning-card3 img{
+.traning-card3 img {
     width: 100%;
     height: 200px;
 }
-.traning-card1{
+
+.traning-card1 {
     background-image: linear-gradient(180.00deg, rgb(106, 216, 134), rgba(65, 139, 55, 0) 200%), url("../images/exercise1.jpg");
-    /* background-color: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%); */
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.traning-card2{
+
+.traning-card2 {
     background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 119, 198, 0.185)), url("../images/exercise2.png");
     background-position: center;
     background-size: cover;
@@ -327,38 +336,44 @@ header {
     height: 200px;
     position: relative;
 }
-.traning-card3{
+
+.traning-card3 {
     background-image: linear-gradient(rgba(32, 28, 28, 0.5), rgba(39, 36, 36, 0.5)), url("../images/exercise3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.traning-card2 p{
+
+.traning-card2 p {
     position: absolute;
     color: rgba(255, 255, 255, 0.5);
     top: 20%;
     left: 10%;
 }
-.traning-card3 p{
+
+.traning-card3 p {
     position: absolute;
     top: 60%;
     left: 10%;
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
-.traning-card1 p{
+
+.traning-card1 p {
     position: absolute;
     top: 60%;
     left: 10%;
     color: #000;
     font-weight: 600;
 }
-.traning-items1{
+
+.traning-items1 {
     display: grid;
     grid-template-columns: 1.25fr 1fr 0.75fr;
 }
-.traning-card4{
+
+.traning-card4 {
     background-image: linear-gradient(rgba(32, 28, 28, 0.5), rgba(39, 36, 36, 0.5)), url("../images/exercise4.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -366,13 +381,15 @@ header {
     height: 200px;
     position: relative;
 }
-.traning-card4 p{
+
+.traning-card4 p {
     position: absolute;
     top: 8%;
     left: 60%;
     color: rgb(255, 255, 255);
 }
-.traning-card5{
+
+.traning-card5 {
     background-image: linear-gradient(rgba(104, 255, 99, 0.5), rgba(143, 250, 93, 0.5)), url("../images/exercise5.jpg");
     height: 200px;
     background-position: center;
@@ -380,14 +397,16 @@ header {
     background-size: cover;
     position: relative;
 }
+
 .traning-card5 p,
-.traning-card6 p{
+.traning-card6 p {
     position: absolute;
     top: 70%;
     left: 15%;
     color: rgb(255, 255, 255);
 }
-.traning-card6{
+
+.traning-card6 {
     background-image: linear-gradient(rgba(64, 203, 245, 0.5), rgba(45, 210, 252, 0.5)), url("../images/exercise6.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -395,9 +414,96 @@ header {
     height: 200px;
     position: relative;
 }
-.bolck-text{
+
+.bolck-text {
     display: none;
 }
+
+/* Pricing card style */
+.pricing-card-items {
+    max-width: 80%;
+    margin: 1rem auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.priceing-card h2 {
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.priceing-card p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+    width: 30%;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    margin-top: 1%;
+}
+
+.card1 {
+    background: rgb(230, 83, 60);
+    padding: 0 1rem;
+    height: 350px;
+    margin-top: -1%;
+}
+
+.card h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card h1 span {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.card hr {
+    max-width: 80%;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+}
+
+.card button {
+    padding: .6rem 5rem;
+    margin-left: 15%;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.card1 hr {
+    margin-bottom: 2rem;
+}
+
+.card1 button {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin-top: -5%;
+}
+
 /* Responsive MObile */
 @media screen and (max-width: 576px) {
     #hamburger-manu {
@@ -472,61 +578,110 @@ header {
     .card-item img {
         margin-left: 15%;
     }
-    .run-section{
+
+    .run-section {
         flex-direction: column;
         margin-top: 10%;
         padding: 1rem;
         max-width: 95%;
         margin: 0 auto;
     }
-    .run-text-content{
+
+    .run-text-content {
         width: 100%;
     }
-    .run-text-content h1{
+
+    .run-text-content h1 {
         margin-top: 1rem;
         font-size: 2rem;
     }
-    .run-image-content{
+
+    .run-image-content {
         max-width: 80%;
         margin-top: 10%;
     }
-    .run-image-content img{
+
+    .run-image-content img {
         width: 100%;
     }
-    .join-btn{
+
+    .join-btn {
         width: 100%;
     }
-    .traning-items{
+
+    .traning-items {
         grid-template-columns: 1fr 1fr;
     }
-    .traning-items1{
+
+    .traning-items1 {
         grid-template-columns: .75fr 1.25fr;
     }
-    .traning-card6{
+
+    .traning-card6 {
         display: none;
     }
-    .traning-section{
+
+    .traning-section {
         max-width: 90%;
         margin: 0 auto;
         margin-top: 2rem;
     }
-    .titel-pera{
+
+    .titel-pera {
         display: none;
     }
-    .bolck-text{
+
+    .bolck-text {
         display: block;
     }
+
     .traning-card1,
     .traning-card2,
     .traning-card3,
     .traning-card4,
     .traning-card5,
-    .traning-card6{
+    .traning-card6 {
         position: relative;
     }
-    .traning-card4 .bolck-text{
+
+    .traning-card4 .bolck-text {
         position: absolute;
         left: 20%;
+    }
+
+    .priceing-card {
+        margin-top: 20%;
+    }
+
+    .pricing-card-items {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    .card,
+    .card1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        height: 300px;
+        margin-top: 1rem;
+    }
+
+    .card hr {
+        margin-bottom: 1rem;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .card h1 span {
+        font-size: 1.3rem;
+    }
+
+    .card button {
+        margin-left: 8.5%;
+        margin-top: 10%;
     }
 }
 
@@ -536,8 +691,10 @@ header {
     .manu-bar {
         max-width: 90%;
         margin: 2rem auto;
+        font-size: .8rem;
     }
-    header{
+
+    header {
         max-width: 100%;
         margin-top: 0;
     }
@@ -552,30 +709,69 @@ header {
         max-width: 80%;
         margin: 0 auto;
     }
-    .header-image-content{
+
+    .header-text-content h2{
+        font-size: 3rem;
+    }
+    .header-image-content {
         width: 80%;
         margin: 1rem auto;
     }
-    .habbit-section{
-        margin-top: 90%;
+
+    .habbit-section {
+        margin-top: 60%;
     }
-    .card-items{
+
+    .card-items {
         grid-template-columns: repeat(2, 1fr);
     }
-    .run-section{
+
+    .run-section {
         max-width: 90%;
         margin: 0 auto;
     }
-    .run-text-content{
+    .titel-pera{
+        display: none;
+    }
+    .bolck-text{
+        display: block;
+    }
+    .run-text-content {
         max-width: 45%;
     }
-    .run-text-content h1{
+
+    .run-text-content h1 {
         font-size: 2rem;
     }
-    .run-image-content{
+
+    .run-image-content {
         max-width: 45%;
     }
-    .run-image-content img{
+
+    .run-image-content img {
         max-width: 100%;
+    }
+    .pricing-card-items{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .card{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        height: 350px;
+        margin-top: 1rem;
+    }
+    .card1 {
+        background: rgb(230, 83, 60);
+        padding: 0 1rem;
+        height: 350px;
+    }
+    .card button {
+        margin-left: 23%;
+        margin-top: 5%;
+    }
+    .card1 button{
+        margin-top: -5%;
     }
 }
