@@ -689,7 +689,10 @@ table td{
     }
 
     .card-item img {
-        margin-left: 15%;
+        margin-left: 9%;
+    }
+    .card-item h3, p{
+        text-align: center;
     }
 
     .run-section {
