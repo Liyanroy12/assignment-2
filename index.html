@@ -166,25 +166,63 @@
          <!-- BMI section start hear -->
           <section class="bmi-section">
             <h3>BMI Calculaor</h3>
-            <p>
+            <p class="bmi-para">
                 We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>
                 access to a gym.
             </p>
+            <p class="bmi-para-2">
+                We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                access to a gym.
+            </p>
             <div class="bmi-content">
-                <div class="bmi-table">
-                    <h3>BMI Calculator Chart</h3>
-                    <table>
-                        <tr>BMI</tr>
-                        <td>Below 18.5</td>
-                        <td>18.5 - 24.9</td>
-                        <td>25.0 - 29.9</td>
-                        <td>30.0 - to abole</td>
-                        <tr>Weight Status</tr>
-                        <td>Below 18.5</td>
-                        <td>18.5 - 24.9</td>
-                        <td>25.0 - 29.9</td>
-                        <td>30.0 - to abole</td>
-                    </table>
+                 <div class="bmi-items">
+                    <div class="bmi-table">
+                        <h3>BMI Calculator Chart</h3>
+                        <table>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bmi-input-fild">
+                        <h2>Calculat your BMI</h2>
+                        <p>We believe fitness should be accessible to everyone, everyone, regardless of income or access to a gym.
+                        </p>
+                        <input type="text" name="" id="" placeholder="Height/cm">
+                        <input type="text" name="" id="" placeholder="Wight/kg">
+                        <input type="text" name="" id="" placeholder="Age">
+                        <select>
+                            <option value="">Sex</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                        <br>
+                        <select id="factor-input">
+                            <option value="">Select yout activity factor</option>
+                            <option value="">factor-1</option>
+                            <option value="">factor-2</option>
+                            <option value="">factor-2</option>
+                            <option value="">factor-4</option>
+                        </select>
+                        <button class="btn-cal">Calculte</button>
+                    </div>
                 </div>
             </div>
           </section>

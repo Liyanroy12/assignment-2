@@ -467,7 +467,7 @@ p {
 
 .card h1 {
     color: rgb(255, 255, 255);
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 5%;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -507,10 +507,12 @@ p {
 }
 
 /* BMI section */
+.bmi-para-2{
+    display: none;
+}
 .bmi-section{
     max-width: 100%;
     margin-top: 5%;
-    border: 1px solid rebeccapurple;
 }
 .bmi-section h3{
     color: rgb(255, 255, 255);
@@ -526,9 +528,95 @@ p {
 }
 .bmi-content{
     max-width: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(54, 53, 53, 0.5);
+    margin-top: 5%;
 }
+.bmi-items{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.bmi-table{
+    width: 35%;
+}
+.bmi-table h3{
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 0;
+}
+.bmi-table td, th{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+}
+table{
+    margin-top: 5%;
+}
+table th{
+    color: rgb(255, 255, 255);
+}
+table td{
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-input-fild{
+    width: 50%;
+    margin-top: 3%;
+}
+.bmi-input-fild h2{
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.bmi-input-fild p{
+    margin-left: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-input-fild input{
+    width: 40%;
+    padding: 1rem;
+    margin-left: 5px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border: none;
+    background: rgba(54, 53, 53, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+.bmi-input-fild select{
+    width: 46%;
+    padding: 1rem;
+    margin-left: 5px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border: none;
+    background: rgba(54, 53, 53, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+#factor-input{
+    width: 94%;
+    padding: 1rem;
+    margin-left: 5px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border: none;
+    background: rgba(54, 53, 53, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+.btn-cal{
+    margin-top: 4%;
+    background: rgb(230, 83, 60);
+    border: none;
+    padding: 1rem 5rem;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: 0.95rem;
 
+}
 /* Responsive MObile */
 @media screen and (max-width: 576px) {
     #hamburger-manu {
@@ -708,6 +796,49 @@ p {
         margin-left: 8.5%;
         margin-top: 10%;
     }
+    .bmi-section h3{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    .bmi-section p{
+        font-size: .8rem;
+        margin-left: 0;
+    }
+    .bmi-items{
+            flex-direction: column;
+    }
+    .bmi-table{
+        width: 80%;
+        margin-left: 0;
+    }
+    .bmi-table h3 {
+        font-size: 1.5rem;
+    }
+    .bmi-table table{
+        font-size: .6rem;
+
+    }
+    .bmi-para{
+        display: none;
+    }
+    .bmi-para-2{
+        display: block;
+    }
+    .bmi-input-fild{
+        width: 100%;
+        margin: 0;
+        margin-top: 5%;
+    }
+    .bmi-input-fild h2{
+        font-size: 1rem;
+    }
+    .bmi-input-fild p{
+        font-size: .5rem;
+    }
+    .bmi-input-fild input{
+        max-width: 35%;
+    }
+
 }
 
 
@@ -798,5 +929,52 @@ p {
     }
     .card1 button{
         margin-top: -5%;
+    }
+    .bmi-section h3{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    .bmi-section p{
+        font-size: .8rem;
+        margin-left: 0;
+    }
+    .bmi-items{
+            flex-direction: column;
+    }
+    .bmi-table{
+        width: 80%;
+        margin-left: 0;
+    }
+    .bmi-table h3 {
+        font-size: 1.5rem;
+    }
+    .bmi-table table{
+        padding: 40px;
+        font-size: .6rem;
+    }
+    .bmi-para{
+        display: none;
+    }
+    .bmi-para-2{
+        display: block;
+    }
+    .bmi-input-fild{
+        width: 100%;
+        margin: 0;
+    }
+    .bmi-input-fild h2{
+        font-size: 1rem;
+    }
+    .bmi-input-fild p{
+        font-size: .5rem;
+    }
+    .bmi-input-fild input{
+        max-width: 35%;
+    }
+    .bmi-input-fild select{
+        width: 42%;
+    }
+    #factor-input{
+        width: 85%;
     }
 }
