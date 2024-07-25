@@ -753,7 +753,6 @@ table td{
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
-    /* gap: 10%; */
     justify-content: space-between;
 }
 .footer-content1{
