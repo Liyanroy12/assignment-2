@@ -739,6 +739,77 @@ table td{
     top: 82%;
     left: 5%;
 }
+
+/* footer section style */
+.footer-section{
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: .1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-contener{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    /* gap: 10%; */
+    justify-content: space-between;
+}
+.footer-content1{
+    width: 40%;
+    margin-left: 10%;
+}
+.footer-content1 h2{
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-bottom: 0;
+    color: rgb(230, 83, 60);
+}
+.footer-content1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+.footer-content2{
+    margin-right: 10%;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+.get-start-conternt1 h2{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+}
+.get-start-conternt1 p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: left;
+}
+.get-start-conternt2 h2{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+}
+.get-start-conternt2 p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: left;
+}
+.footer-section hr{
+    width: 80%;
+    color: rgb(255, 255, 255, 0.5);
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+.footer-section .last{
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+}
+
 /* Responsive MObile */
 @media screen and (max-width: 576px) {
     #hamburger-manu {
@@ -976,6 +1047,28 @@ table td{
     .team-card4{
         display: none;
     }
+    .footer-contener{
+        flex-direction: column;
+    }
+    .footer-content1{
+        width: 90%;
+        margin: 0 0;
+        margin-left: 0;
+    }
+    .footer-content1 p{
+        text-align: left;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .get-start-conternt1{
+        margin-bottom: 0px;
+    }
+    .get-start-conternt2{
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
 }
 
 
@@ -1113,5 +1206,11 @@ table td{
     }
     #factor-input{
         width: 85%;
+    }
+    .footer-contener{
+        flex-direction: column;
+    }
+    .footer-content1{
+        margin-left: 5%;
     }
 }
